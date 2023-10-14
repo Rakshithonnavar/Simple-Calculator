@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputBox = document.getElementById("inputBox");
     let resultDisplayed = false;  // Flag to track whether result is displayed or not
 
-    // Function to update the input box
+    
     function updateInput(value) {
         if (resultDisplayed) {
             inputBox.value = "";

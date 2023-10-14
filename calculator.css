@@ -49,7 +49,6 @@ body{
     box-shadow: -5px -6px 15px black;
     outline: 1px solid #313131;
     outline-offset: 3px;
-    
   }
 
   button:active{
@@ -63,6 +62,7 @@ body{
      font-weight: 700;
   }
 
+
   #eqBtn{
     background: lightblue ;
     font-weight: 2000;
@@ -70,6 +70,8 @@ body{
     width: 190px;
     font-size: x-large;
   }
+
+
   #eqBtn:active
   {
     background: white;
@@ -77,3 +79,9 @@ body{
   }
   
   
+  @media (max-width: 600px) {
+    button {
+        width: 30%;
+        font-size: medium;
+    }
+  }
