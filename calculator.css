@@ -8,11 +8,9 @@
 
 body{
     min-height: 100vh;
-    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center ;
-    place-items: center;
     background-color: wheat;
 }
   .calculator{
@@ -20,37 +18,35 @@ body{
     box-shadow: 0 0 15px #000;
     border: 2px solid;
     border-radius: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+} 
+
+.display input {
+  width: 100%;
+  border: 2px solid #313131;
+  padding: 20px;
+  background: white;
+  color: black;
+  font-size: 30px;
+  text-align: right;
+  border-radius: 15px;
+  margin-bottom: 12px;
 }
 
-  .display input{
-    width:360px;
-    border: black;
-    outline: 4px solid #313131;
-    outline-offset: 3px;
-    padding: 20px;
-    background: white;
-    color: black;
-    font-size: 40px;
-    text-align: right;
-    width: 500px;
-    border-radius: 15px;
-    margin-bottom: 12px;
-    margin-left: 10px;
- }
-
-  button{
-    width: 80px;
-    height: 70px;
-    margin: 10px;
-    background: aqua;
-    font-size: large;
-    font-weight: 600;
-    border-radius: 80px;
-    box-shadow: -5px -6px 15px black;
-    outline: 1px solid #313131;
-    outline-offset: 3px;
-  }
-
+button {
+  width: 20%;
+  height: 70px;
+  margin: 10px;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 80px;
+  box-shadow: -5px -6px 15px black;
+  outline: 1px solid #313131;
+}
+  
   button:active{
     background: white;
     transform: translate(2px,2px);
@@ -59,29 +55,28 @@ body{
   .opr{
      color:black;
      background-color:aqua;
-     font-weight: 700;
+     font-weight: 2000;
+     border-radius: 20px;
+     width: 190px;
+     font-size: x-large;
   }
 
 
   #eqBtn{
     background: lightblue ;
-    font-weight: 2000;
-    border-radius: 20px;
-    width: 190px;
-    font-size: x-large;
+    transform: translate(2px, 2px);
   }
 
 
-  #eqBtn:active
-  {
-    background: white;
-    transform: translate(2px,2px);
-  }
   
-  
-  @media (max-width: 600px) {
-    button {
-        width: 30%;
-        font-size: medium;
+  @media (max-width: 400px) and (max-height: 700px) {
+    .calculator {
+        width: 90%;
     }
+    button {
+      width: 30%;
+      font-size: medium;
   }
+}
+  
+ 
