@@ -13,13 +13,16 @@ display: flex;
 justify-content: center;
 align-items: center ;
 place-items: center;
-background-color: wheat;
+background-color: black;
+
 }
+
 .calculator{
 padding: 15px ;
 box-shadow: 0 0 15px #000;
 border: 2px solid;
 border-radius: 30px;
+outline: 4px solid white;
 }
 
 .display input{
@@ -47,7 +50,7 @@ font-size: large;
 font-weight: 600;
 border-radius: 80px;
 box-shadow: -5px -6px 15px black;
-outline: 1px solid #313131;
+outline: 1px solid white;
 outline-offset: 3px;
 
 }
@@ -70,6 +73,7 @@ border-radius: 20px;
 width: 190px;
 font-size: x-large;
 }
+
 #eqBtn:active
 {
 background: white;
